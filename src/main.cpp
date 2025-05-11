@@ -128,7 +128,7 @@ void loop() {
     Serial.println(" A");
 
     if (current > JAM_CURRENT_THRESHOLD) {
-      Serial.println("⚠️ Jam detected!");
+      Serial.println("Jam detected!");
       client.publish(MQTT_STATUS_TOPIC, "jammed", true);
       stopMotor();
     }
