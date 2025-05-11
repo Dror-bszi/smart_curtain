@@ -38,6 +38,15 @@ This project automates curtain movement using an **ESP32**, **L298N motor driver
 | VIN        | 5V Output from Buck       | ESP32 power input           |
 | 34         | ACS712 OUT                | Analog current sensor input |
 
+### Pin Summary
+
+* **ENA (GPIO 25):** PWM signal to control motor speed
+* **IN1 (GPIO 14):** Motor direction control pin 1
+* **IN2 (GPIO 27):** Motor direction control pin 2
+* **CURRENT\_SENSOR\_PIN (GPIO 34):** Analog input from ACS712 for current measurement
+* **VIN:** Connect to 5V output of buck converter (converted from 12V power supply)
+* **GND:** Shared ground between ESP32, motor driver, sensor, and power source
+
 ---
 
 ## Home Assistant Configuration
